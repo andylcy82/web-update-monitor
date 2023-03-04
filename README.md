@@ -3,7 +3,8 @@
 ## Author
 [Andy Lee] - https://github.com/andylcy82
 
-This Python script "web-update-monitor.py" is designed to check a list of websites for specific updates of keywords / key phrases at a defined frequency and send email notifications to specified recipients based on the update status.
+## Purpose
+This Python script "web-update-monitor.py" is designed to check a list of websites for updates of a specified keyword / key phrase at a frequency (e.g. every 6 hours) and send email notifications to specified recipients based on the update status.
 
 ## Getting Started
 Before running this script, you will need to make sure that you have Python installed on your machine, along with the following libraries:
@@ -39,7 +40,7 @@ mysql_hostname = "" #MySQL Hostname
 mysql_username = "" #MySQL User Name
 mysql_passwd = "" #MySQL Password
 mysql_database = "" #MySQL Database
-check_frequency_min = 180 #The frequency of checking (in minutes)
+check_frequency_min = 360 #The frequency of checking (in minutes)
 
 The GitHub repository also includes an SQL dump file named "web_update_monitor.sql" that contains the necessary code to create the MySQL database tables. Sample rows are inserted into tables "receiver_email_list" and "url_list" for your reference and further amendment.
 

@@ -20,7 +20,7 @@ def web_update_monitor():
     mysql_username = "" #MySQL User Name
     mysql_passwd = "" #MySQL Password
     mysql_database = "" #MySQL Database
-    check_frequency_min = 180 #The frequency of checking (in minutes)
+    check_frequency_min = 360 #The frequency of checking (in minutes)
     ############################
     
     mydb = mysql.connector.connect(
