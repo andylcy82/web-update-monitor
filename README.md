@@ -9,13 +9,14 @@ This Python script "web-update-monitor.py" is designed to check a list of websit
 ## Getting Started
 Before running this script, you will need to make sure that you have Python installed on your machine, along with the following libraries:
 
-schedule
-requests
-smtplib
-ssl
-lxml
-mysql-connector-python
+schedule  
+requests  
+smtplib  
+ssl  
+lxml  
+mysql-connector-python  
 pandas
+
 You can install these libraries using pip, by running the following command in your terminal or command prompt:
 
 pip install schedule requests smtplib ssl lxml mysql-connector-python pandas
