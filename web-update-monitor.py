@@ -89,7 +89,7 @@ def web_update_monitor():
                     server.sendmail(sender_email, receiver_email, message)
                 server.quit()
             
-            #Update the checked results
+            #Update the checked results (0 = Not updated; 1 = Updated; -1 = Error)
             check_results_sql = "INSERT INTO check_results (date_time, url_serial, check_update_flag) VALUES (now(), %s, %s)"
             check_results_val = (serial, update)
             check_results_cursor.execute(check_results_sql, check_results_val)
