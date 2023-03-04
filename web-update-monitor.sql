@@ -30,6 +30,10 @@ CREATE TABLE IF NOT EXISTS `receiver_email_list` (
   PRIMARY KEY (`serial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Insert sample rows
+INSERT INTO `receiver_email_list` (`serial`, `send_when_no_update`, `send_when_update`, `send_when_error`, `email`) VALUES
+(1, 1, 1, 1, 'xxxxxx@xxxxxx.com'),
+(2, 0, 1, 0, 'yyyyyy@yyyyyy.com');
 
 CREATE TABLE IF NOT EXISTS `url_list` (
   `serial` int(11) NOT NULL AUTO_INCREMENT,
@@ -44,4 +48,9 @@ CREATE TABLE IF NOT EXISTS `url_list` (
   `check_flag` tinyint(4) NOT NULL,
   PRIMARY KEY (`serial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Insert sample rows
+INSERT INTO `url_list` (`serial`, `URL`, `name`, `keyword`, `wrap`, `no_update_subject`, `no_update_message`, `update_subject`, `update_message`, `check_flag`) VALUES
+(1, 'https://xxxxxxxxxx', 'Testing Company Name 1', 'Testing Keyword 1', '//h3[@style=\'white-space:pre-wrap;\']', 'Email subject if there is no update', 'Email content if there is no update', 'Email subject if there is an update', 'Email content if there is an update', 1),
+(2, 'https://yyyyyyyyyy', 'Testing Company Name 2', 'Testing Keyword 2', '//strong', 'Email subject if there is no update', 'Email content if there is no update', 'Email subject if there is an update', 'Email content if there is an update', 1);
 COMMIT;

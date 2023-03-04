@@ -41,7 +41,7 @@ mysql_passwd = "" #MySQL Password
 mysql_database = "" #MySQL Database
 check_frequency_min = 180 #The frequency of checking (in minutes)
 
-The GitHub repository also includes an SQL dump file named "web_update_monitor.sql" that contains the necessary code to create the MySQL database tables.
+The GitHub repository also includes an SQL dump file named "web_update_monitor.sql" that contains the necessary code to create the MySQL database tables. Sample rows are inserted into tables "receiver_email_list" and "url_list" for your reference and further amendment.
 
 You can use this SQL dump file to create the necessary database tables for the web application. To do so, create a new database, copy the SQL dump code and paste it into a new MySQL query tab in your preferred database management tool. Then, execute the query to create the tables.
 
