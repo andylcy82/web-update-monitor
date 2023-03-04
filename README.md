@@ -26,21 +26,22 @@ Once you have the required libraries installed, you can clone this repository or
 ## Usage
 To use this script, you will need to provide the following information:
 
-SMTP server information (smtp_server, port)
-Sender's email address (sender_email) and password (email_password)
-MySQL database information (mysql_hostname, mysql_username, mysql_passwd, mysql_database)
-List of URLs to check (URL_list table in the MySQL database)
+SMTP server information (smtp_server, port)  
+Sender's email address (sender_email) and password (email_password)  
+MySQL database information (mysql_hostname, mysql_username, mysql_passwd, mysql_database)  
+List of URLs to check (URL_list table in the MySQL database)  
 List of email recipients (receiver_email_list table in the MySQL database)
+
 To configure the script, open the web_update_checker.py file in a text editor and update the following lines with your own information:
 
-port = 465  #SMTP port
-smtp_server = ""  #SMTP server
-sender_email = "" #Sender's email address for message notifications
-email_password = "" #Sender's email password
-mysql_hostname = "" #MySQL Hostname
-mysql_username = "" #MySQL User Name
-mysql_passwd = "" #MySQL Password
-mysql_database = "" #MySQL Database
+port = 465  #SMTP port  
+smtp_server = ""  #SMTP server  
+sender_email = "" #Sender's email address for message notifications  
+email_password = "" #Sender's email password  
+mysql_hostname = "" #MySQL Hostname  
+mysql_username = "" #MySQL User Name  
+mysql_passwd = "" #MySQL Password  
+mysql_database = "" #MySQL Database  
 check_frequency_min = 360 #The frequency of checking (in minutes)
 
 The GitHub repository also includes an SQL dump file named "web_update_monitor.sql" that contains the necessary code to create the MySQL database tables. Sample rows are inserted into tables "receiver_email_list" and "url_list" for your reference and further amendment.
