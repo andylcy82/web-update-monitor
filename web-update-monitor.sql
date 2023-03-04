@@ -13,22 +13,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `website_monitor`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `check_results`
---
-
-DROP TABLE IF EXISTS `check_results`;
 CREATE TABLE IF NOT EXISTS `check_results` (
   `date_time` datetime NOT NULL,
   `url_serial` int(11) NOT NULL,
@@ -36,13 +20,7 @@ CREATE TABLE IF NOT EXISTS `check_results` (
   PRIMARY KEY (`date_time`,`url_serial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `receiver_email_list`
---
-
-DROP TABLE IF EXISTS `receiver_email_list`;
 CREATE TABLE IF NOT EXISTS `receiver_email_list` (
   `serial` int(11) NOT NULL AUTO_INCREMENT,
   `send_when_no_update` tinyint(4) NOT NULL,
@@ -52,13 +30,7 @@ CREATE TABLE IF NOT EXISTS `receiver_email_list` (
   PRIMARY KEY (`serial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `url_list`
---
-
-DROP TABLE IF EXISTS `url_list`;
 CREATE TABLE IF NOT EXISTS `url_list` (
   `serial` int(11) NOT NULL AUTO_INCREMENT,
   `URL` varchar(200) NOT NULL,
@@ -73,7 +45,3 @@ CREATE TABLE IF NOT EXISTS `url_list` (
   PRIMARY KEY (`serial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
