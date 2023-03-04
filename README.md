@@ -5,7 +5,7 @@
 
 This Python script "web-update-monitor.py" is designed to check a list of websites for specific updates of keywords / key phrases at a defined frequency and send email notifications to specified recipients based on the update status.
 
-##Getting Started
+## Getting Started
 Before running this script, you will need to make sure that you have Python installed on your machine, along with the following libraries:
 
 schedule
@@ -21,7 +21,7 @@ pip install schedule requests smtplib ssl lxml mysql-connector-python pandas
 
 Once you have the required libraries installed, you can clone this repository or download the web_update_checker.py file to your local machine.
 
-##Usage
+## Usage
 To use this script, you will need to provide the following information:
 
 SMTP server information (smtp_server, port)
@@ -51,9 +51,9 @@ python web_update_monitor.py
 
 The script will run indefinitely, checking the URLs at the specified frequency and sending email notifications when updates are detected. You can stop the script by pressing CTRL+C in your terminal or command prompt.
 
-##License
+## License
 This Python script is licensed under the GNU General Public License v3.0. You can find a copy of the license in the LICENSE file included with the project. This license grants you the freedom to use, modify, and distribute the code, subject to the terms and conditions of the license. It also requires that any modifications or derivative works of the code be released under the same license.
 
-##Disclaimer
+## Disclaimer
 This script is provided as-is, without any warranties or guarantees of any kind. The author is not responsible for any damages or losses that may arise from the use of this script. Use at your own risk.
 
