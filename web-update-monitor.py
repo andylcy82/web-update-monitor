@@ -49,6 +49,7 @@ def web_update_monitor():
     check_results_cursor = mydb3.cursor()
 
     #Load the list of URLs, keywords and wraps to be checked as well as the notification email subjects and contents should there be updates or not
+    #To disable checking a certain website, simply set check_flag = 0 for the row in the url_list table
     url_cursor.execute("SELECT serial, URL, name, keyword, wrap, no_update_subject, no_update_message, update_subject, update_message FROM URL_list where check_flag = 1")
 
     for (serial, URL, name, xpath_keyword, xpath_wrap, no_update_subject, no_update_message, update_subject, update_message) in url_cursor:
