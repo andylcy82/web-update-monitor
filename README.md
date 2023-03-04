@@ -47,7 +47,7 @@ You can use this SQL dump file to create the necessary database tables for the w
 
 Once you have updated the necessary information, save the file and run it using the following command:
 
-python web_update_checker.py
+python web_update_monitor.py
 
 The script will run indefinitely, checking the URLs at the specified frequency and sending email notifications when updates are detected. You can stop the script by pressing CTRL+C in your terminal or command prompt.
 
