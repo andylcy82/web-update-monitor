@@ -83,6 +83,7 @@ def web_update_monitor():
             if update == -1:
                 receiver_email_cursor.execute("SELECT email FROM receiver_email_list WHERE send_when_error = 1")
             
+            #Sign in the sender's email account, send the notification email to recipients and then sign out
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
                 server.login(sender_email, email_password)
