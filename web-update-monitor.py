@@ -1,7 +1,7 @@
 import schedule
 import time
 
-def web_update_check():
+def web_update_monitor():
 
     import requests
     import smtplib, ssl
@@ -103,7 +103,7 @@ def web_update_check():
     mydb3.close()    
 
 #Schedule to run the check with the defined frequency (in minutes)
-schedule.every(check_frequency_min).minutes.do(web_update_check)
+schedule.every(check_frequency_min).minutes.do(web_update_monitor)
 
 while True:
     schedule.run_pending()
